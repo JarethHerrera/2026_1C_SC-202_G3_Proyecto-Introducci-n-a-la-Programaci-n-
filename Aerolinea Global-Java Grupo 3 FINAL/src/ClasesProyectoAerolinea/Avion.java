@@ -8,7 +8,6 @@ package ClasesProyectoAerolinea;
  *
  * @author eltro
  */
-
 public class Avion {
 
     String matricula;
@@ -17,7 +16,7 @@ public class Avion {
     int filasEjecutiva;
     int filasEconomica;
     int columnas;
-    
+
     Asiento[][] asientos;
 
     public Avion(String matricula, String modelo, int filasPrimera, int filasEjecutiva, int filasEconomica, int columnas) {
@@ -61,12 +60,12 @@ public class Avion {
                 }
             }
         }
-    return contadordeunsolouso;
-}
+        return contadordeunsolouso;
+    }
 
     public double getPorcentajeOcupacion() {
         return (double) AsientoOcupados() / Todoslosasietos() * 100;
-        
+
     }
 
     public String getMatricula() {
@@ -124,6 +123,5 @@ public class Avion {
     public void setAsientos(Asiento[][] asientos) {
         this.asientos = asientos;
     }
-
 
 }
