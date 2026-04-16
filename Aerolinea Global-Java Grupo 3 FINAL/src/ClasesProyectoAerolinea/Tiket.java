@@ -11,7 +11,7 @@ package ClasesProyectoAerolinea;
 public class Tiket {
 
     // contador compartido para generar numeros de tiquete unicos
-    int contador = 1000;
+    private static int contador = 1000;
     // numero unico del tiquete, ej: TK1001
     String numero;
     // pasajero que compro el tiquete
